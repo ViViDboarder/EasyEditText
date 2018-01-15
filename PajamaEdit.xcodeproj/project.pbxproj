@@ -11,11 +11,11 @@
 		D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */; };
 		D812A1B6200C4D2100F34E52 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */; };
 		D812A1B8200C4D2100F34E52 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B7200C4D2100F34E52 /* Document.swift */; };
-		D812A1BB200C4D2100F34E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D812A1B9200C4D2100F34E52 /* Main.storyboard */; };
 		D812A1BD200C4D2100F34E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D812A1BC200C4D2100F34E52 /* Assets.xcassets */; };
 		D812A1C0200C4D2100F34E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */; };
 		D812A1CB200C4D2100F34E52 /* PajamaEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1CA200C4D2100F34E52 /* PajamaEditTests.swift */; };
 		D812A1D6200C4D2100F34E52 /* PajamaEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */; };
+		D828602B200C879500E2D7BE /* TextDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828602A200C879500E2D7BE /* TextDocumentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
 		D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 		D812A1B7200C4D2100F34E52 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
-		D812A1BA200C4D2100F34E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D812A1BC200C4D2100F34E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D812A1BF200C4D2100F34E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D812A1C1200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		D812A1D1200C4D2100F34E52 /* PajamaEditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PajamaEditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PajamaEditUITests.swift; sourceTree = "<group>"; };
 		D812A1D7200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D828602A200C879500E2D7BE /* TextDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDocumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D805EF85200C6F9D005E2BA8 /* View Families */ = {
+			isa = PBXGroup;
+			children = (
+				D828602A200C879500E2D7BE /* TextDocumentViewController.swift */,
+			);
+			path = "View Families";
+			sourceTree = "<group>";
+		};
 		D812A1A5200C4D2100F34E52 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +109,11 @@
 		D812A1B0200C4D2100F34E52 /* PajamaEdit */ = {
 			isa = PBXGroup;
 			children = (
+				D805EF85200C6F9D005E2BA8 /* View Families */,
 				D812A1B1200C4D2100F34E52 /* AppDelegate.swift */,
 				D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */,
 				D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */,
 				D812A1B7200C4D2100F34E52 /* Document.swift */,
-				D812A1B9200C4D2100F34E52 /* Main.storyboard */,
 				D812A1BC200C4D2100F34E52 /* Assets.xcassets */,
 				D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */,
 				D812A1C1200C4D2100F34E52 /* Info.plist */,
@@ -240,7 +248,6 @@
 			files = (
 				D812A1C0200C4D2100F34E52 /* LaunchScreen.storyboard in Resources */,
 				D812A1BD200C4D2100F34E52 /* Assets.xcassets in Resources */,
-				D812A1BB200C4D2100F34E52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +275,7 @@
 				D812A1B8200C4D2100F34E52 /* Document.swift in Sources */,
 				D812A1B6200C4D2100F34E52 /* DocumentViewController.swift in Sources */,
 				D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */,
+				D828602B200C879500E2D7BE /* TextDocumentViewController.swift in Sources */,
 				D812A1B2200C4D2100F34E52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D812A1B9200C4D2100F34E52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D812A1BA200C4D2100F34E52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

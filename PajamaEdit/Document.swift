@@ -10,13 +10,23 @@ import UIKit
 
 class Document: UIDocument {
     
+    var utf8String: String? = nil
+    
     override func contents(forType typeName: String) throws -> Any {
         // Encode your document with an instance of NSData or NSFileWrapper
         return Data()
     }
     
     override func load(fromContents contents: Any, ofType typeName: String?) throws {
-        // Load your document from contents
+        guard let data = contents as? Data else {
+            return
+        }
+        
+        guard let string = String(data: data, encoding: .utf8) else {
+            return
+        }
+        
+        self.utf8String = string
     }
 }
 
