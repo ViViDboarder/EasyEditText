@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB63751641E31C748F833E07 /* Pods_PajamaEdit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87D1A2AFCC9967943C3E63D /* Pods_PajamaEdit.framework */; };
 		D812A1B2200C4D2100F34E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B1200C4D2100F34E52 /* AppDelegate.swift */; };
 		D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */; };
-		D812A1B6200C4D2100F34E52 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */; };
-		D812A1B8200C4D2100F34E52 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B7200C4D2100F34E52 /* Document.swift */; };
+		D812A1B8200C4D2100F34E52 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B7200C4D2100F34E52 /* TextDocument.swift */; };
 		D812A1BD200C4D2100F34E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D812A1BC200C4D2100F34E52 /* Assets.xcassets */; };
 		D812A1C0200C4D2100F34E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */; };
 		D812A1CB200C4D2100F34E52 /* PajamaEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1CA200C4D2100F34E52 /* PajamaEditTests.swift */; };
@@ -36,11 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34BFDFB82B53A51CCBAA74E7 /* Pods-PajamaEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PajamaEdit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PajamaEdit/Pods-PajamaEdit.debug.xcconfig"; sourceTree = "<group>"; };
+		A87D1A2AFCC9967943C3E63D /* Pods_PajamaEdit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PajamaEdit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E8764E7B4EFAD2FD5A24E3 /* Pods-PajamaEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PajamaEdit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PajamaEdit/Pods-PajamaEdit.release.xcconfig"; sourceTree = "<group>"; };
 		D812A1AE200C4D2100F34E52 /* PajamaEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PajamaEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D812A1B1200C4D2100F34E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
-		D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
-		D812A1B7200C4D2100F34E52 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D812A1B7200C4D2100F34E52 /* TextDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDocument.swift; sourceTree = "<group>"; };
 		D812A1BC200C4D2100F34E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D812A1BF200C4D2100F34E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D812A1C1200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB63751641E31C748F833E07 /* Pods_PajamaEdit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BBF5F6AE53841DA9AC9BF9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A87D1A2AFCC9967943C3E63D /* Pods_PajamaEdit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D805EF85200C6F9D005E2BA8 /* View Families */ = {
 			isa = PBXGroup;
 			children = (
+				D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */,
 				D828602A200C879500E2D7BE /* TextDocumentViewController.swift */,
 			);
 			path = "View Families";
@@ -93,6 +105,8 @@
 				D812A1C9200C4D2100F34E52 /* PajamaEditTests */,
 				D812A1D4200C4D2100F34E52 /* PajamaEditUITests */,
 				D812A1AF200C4D2100F34E52 /* Products */,
+				E1F446CF5F651BAB333110C9 /* Pods */,
+				6BBF5F6AE53841DA9AC9BF9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,11 +123,8 @@
 		D812A1B0200C4D2100F34E52 /* PajamaEdit */ = {
 			isa = PBXGroup;
 			children = (
+				D8DE72AA200C8D8400455A09 /* Configuration Families */,
 				D805EF85200C6F9D005E2BA8 /* View Families */,
-				D812A1B1200C4D2100F34E52 /* AppDelegate.swift */,
-				D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */,
-				D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */,
-				D812A1B7200C4D2100F34E52 /* Document.swift */,
 				D812A1BC200C4D2100F34E52 /* Assets.xcassets */,
 				D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */,
 				D812A1C1200C4D2100F34E52 /* Info.plist */,
@@ -139,6 +150,24 @@
 			path = PajamaEditUITests;
 			sourceTree = "<group>";
 		};
+		D8DE72AA200C8D8400455A09 /* Configuration Families */ = {
+			isa = PBXGroup;
+			children = (
+				D812A1B1200C4D2100F34E52 /* AppDelegate.swift */,
+				D812A1B7200C4D2100F34E52 /* TextDocument.swift */,
+			);
+			path = "Configuration Families";
+			sourceTree = "<group>";
+		};
+		E1F446CF5F651BAB333110C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34BFDFB82B53A51CCBAA74E7 /* Pods-PajamaEdit.debug.xcconfig */,
+				D7E8764E7B4EFAD2FD5A24E3 /* Pods-PajamaEdit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D812A1DA200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEdit" */;
 			buildPhases = (
+				8CFD87A8E0EA04A6EE59EE04 /* [CP] Check Pods Manifest.lock */,
 				D812A1AA200C4D2100F34E52 /* Sources */,
 				D812A1AB200C4D2100F34E52 /* Frameworks */,
 				D812A1AC200C4D2100F34E52 /* Resources */,
+				E30A524FBD4DE2721171D01E /* [CP] Embed Pods Frameworks */,
+				A7A355D2FF03685B67E7957B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,13 +299,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CFD87A8E0EA04A6EE59EE04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PajamaEdit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A355D2FF03685B67E7957B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PajamaEdit/Pods-PajamaEdit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30A524FBD4DE2721171D01E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PajamaEdit/Pods-PajamaEdit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PajamaEdit/Pods-PajamaEdit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D812A1AA200C4D2100F34E52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D812A1B8200C4D2100F34E52 /* Document.swift in Sources */,
-				D812A1B6200C4D2100F34E52 /* DocumentViewController.swift in Sources */,
+				D812A1B8200C4D2100F34E52 /* TextDocument.swift in Sources */,
 				D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */,
 				D828602B200C879500E2D7BE /* TextDocumentViewController.swift in Sources */,
 				D812A1B2200C4D2100F34E52 /* AppDelegate.swift in Sources */,
@@ -432,6 +517,7 @@
 		};
 		D812A1DB200C4D2100F34E52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34BFDFB82B53A51CCBAA74E7 /* Pods-PajamaEdit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +534,7 @@
 		};
 		D812A1DC200C4D2100F34E52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E8764E7B4EFAD2FD5A24E3 /* Pods-PajamaEdit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

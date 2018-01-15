@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import SnapKit
 
-class TextDocumentViewController: UIViewController {
+class TextDocumentViewController: UIViewController, UITextViewDelegate {
     
-    let document: Document
+    let document: TextDocument
     
     let textView = UITextView()
     
-    init(document: Document) {
+    init(document: TextDocument) {
         self.document = document
         super.init(nibName: nil, bundle: nil)
     }
@@ -26,6 +27,16 @@ class TextDocumentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(didDismiss))
+        
+        view.addSubview(textView)
+        textView.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
+            make.left.equalTo(view.safeAreaLayoutGuide)
+            make.right.equalTo(view.safeAreaLayoutGuide)
+        }
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,12 +53,18 @@ class TextDocumentViewController: UIViewController {
             }
             
             self.title = self.document.fileURL.lastPathComponent
+            self.textView.text = self.document.utf8String
         }
     }
     
     @objc func didDismiss() {
         self.document.close(completionHandler: nil)
         dismiss(animated: true, completion: nil)
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        document.utf8String = textView.text
+        document.updateChangeCount(.done)
     }
 }
 

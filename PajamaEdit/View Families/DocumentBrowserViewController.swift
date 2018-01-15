@@ -49,7 +49,8 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
     }
     
     func presentDocument(at documentURL: URL) {
-        let vc = TextDocumentViewController(document: Document(fileURL: documentURL))
+        let vc = TextDocumentViewController(document: TextDocument(fileURL: documentURL))
+        vc.modalPresentationStyle = .formSheet
         
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true, completion: nil)

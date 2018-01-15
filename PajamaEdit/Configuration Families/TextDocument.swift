@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Foundation
 
-class Document: UIDocument {
+class TextDocument: UIDocument {
     
-    var utf8String: String? = nil
+    var utf8String: String = ""
     
     override func contents(forType typeName: String) throws -> Any {
-        // Encode your document with an instance of NSData or NSFileWrapper
-        return Data()
+        guard let data = utf8String.data(using: .utf8) else {
+            fatalError()
+        }
+        
+        return data
     }
     
     override func load(fromContents contents: Any, ofType typeName: String?) throws {
@@ -27,6 +31,12 @@ class Document: UIDocument {
         }
         
         self.utf8String = string
+    }
+    
+    override func fileAttributesToWrite(to url: URL, for saveOperation: UIDocumentSaveOperation) throws -> [AnyHashable : Any] {
+        return [
+            URLResourceKey.hasHiddenExtensionKey: true
+        ]
     }
 }
 
