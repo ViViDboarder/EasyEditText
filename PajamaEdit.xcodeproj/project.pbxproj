@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D812A1B2200C4D2100F34E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B1200C4D2100F34E52 /* AppDelegate.swift */; };
+		D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */; };
+		D812A1B6200C4D2100F34E52 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */; };
+		D812A1B8200C4D2100F34E52 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1B7200C4D2100F34E52 /* Document.swift */; };
+		D812A1BB200C4D2100F34E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D812A1B9200C4D2100F34E52 /* Main.storyboard */; };
+		D812A1BD200C4D2100F34E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D812A1BC200C4D2100F34E52 /* Assets.xcassets */; };
+		D812A1C0200C4D2100F34E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */; };
+		D812A1CB200C4D2100F34E52 /* PajamaEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1CA200C4D2100F34E52 /* PajamaEditTests.swift */; };
+		D812A1D6200C4D2100F34E52 /* PajamaEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D812A1C7200C4D2100F34E52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D812A1A6200C4D2100F34E52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D812A1AD200C4D2100F34E52;
+			remoteInfo = PajamaEdit;
+		};
+		D812A1D2200C4D2100F34E52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D812A1A6200C4D2100F34E52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D812A1AD200C4D2100F34E52;
+			remoteInfo = PajamaEdit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D812A1AE200C4D2100F34E52 /* PajamaEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PajamaEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D812A1B1200C4D2100F34E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
+		D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		D812A1B7200C4D2100F34E52 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D812A1BA200C4D2100F34E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D812A1BC200C4D2100F34E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D812A1BF200C4D2100F34E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D812A1C1200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D812A1C6200C4D2100F34E52 /* PajamaEditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PajamaEditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D812A1CA200C4D2100F34E52 /* PajamaEditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PajamaEditTests.swift; sourceTree = "<group>"; };
+		D812A1CC200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D812A1D1200C4D2100F34E52 /* PajamaEditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PajamaEditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PajamaEditUITests.swift; sourceTree = "<group>"; };
+		D812A1D7200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D812A1AB200C4D2100F34E52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D812A1C3200C4D2100F34E52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D812A1CE200C4D2100F34E52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D812A1A5200C4D2100F34E52 = {
+			isa = PBXGroup;
+			children = (
+				D812A1B0200C4D2100F34E52 /* PajamaEdit */,
+				D812A1C9200C4D2100F34E52 /* PajamaEditTests */,
+				D812A1D4200C4D2100F34E52 /* PajamaEditUITests */,
+				D812A1AF200C4D2100F34E52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D812A1AF200C4D2100F34E52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D812A1AE200C4D2100F34E52 /* PajamaEdit.app */,
+				D812A1C6200C4D2100F34E52 /* PajamaEditTests.xctest */,
+				D812A1D1200C4D2100F34E52 /* PajamaEditUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D812A1B0200C4D2100F34E52 /* PajamaEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D812A1B1200C4D2100F34E52 /* AppDelegate.swift */,
+				D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */,
+				D812A1B5200C4D2100F34E52 /* DocumentViewController.swift */,
+				D812A1B7200C4D2100F34E52 /* Document.swift */,
+				D812A1B9200C4D2100F34E52 /* Main.storyboard */,
+				D812A1BC200C4D2100F34E52 /* Assets.xcassets */,
+				D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */,
+				D812A1C1200C4D2100F34E52 /* Info.plist */,
+			);
+			path = PajamaEdit;
+			sourceTree = "<group>";
+		};
+		D812A1C9200C4D2100F34E52 /* PajamaEditTests */ = {
+			isa = PBXGroup;
+			children = (
+				D812A1CA200C4D2100F34E52 /* PajamaEditTests.swift */,
+				D812A1CC200C4D2100F34E52 /* Info.plist */,
+			);
+			path = PajamaEditTests;
+			sourceTree = "<group>";
+		};
+		D812A1D4200C4D2100F34E52 /* PajamaEditUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */,
+				D812A1D7200C4D2100F34E52 /* Info.plist */,
+			);
+			path = PajamaEditUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D812A1AD200C4D2100F34E52 /* PajamaEdit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D812A1DA200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEdit" */;
+			buildPhases = (
+				D812A1AA200C4D2100F34E52 /* Sources */,
+				D812A1AB200C4D2100F34E52 /* Frameworks */,
+				D812A1AC200C4D2100F34E52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PajamaEdit;
+			productName = PajamaEdit;
+			productReference = D812A1AE200C4D2100F34E52 /* PajamaEdit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D812A1C5200C4D2100F34E52 /* PajamaEditTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D812A1DD200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEditTests" */;
+			buildPhases = (
+				D812A1C2200C4D2100F34E52 /* Sources */,
+				D812A1C3200C4D2100F34E52 /* Frameworks */,
+				D812A1C4200C4D2100F34E52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D812A1C8200C4D2100F34E52 /* PBXTargetDependency */,
+			);
+			name = PajamaEditTests;
+			productName = PajamaEditTests;
+			productReference = D812A1C6200C4D2100F34E52 /* PajamaEditTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D812A1D0200C4D2100F34E52 /* PajamaEditUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D812A1E0200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEditUITests" */;
+			buildPhases = (
+				D812A1CD200C4D2100F34E52 /* Sources */,
+				D812A1CE200C4D2100F34E52 /* Frameworks */,
+				D812A1CF200C4D2100F34E52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D812A1D3200C4D2100F34E52 /* PBXTargetDependency */,
+			);
+			name = PajamaEditUITests;
+			productName = PajamaEditUITests;
+			productReference = D812A1D1200C4D2100F34E52 /* PajamaEditUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D812A1A6200C4D2100F34E52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sahand Nayebaziz";
+				TargetAttributes = {
+					D812A1AD200C4D2100F34E52 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D812A1C5200C4D2100F34E52 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D812A1AD200C4D2100F34E52;
+					};
+					D812A1D0200C4D2100F34E52 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D812A1AD200C4D2100F34E52;
+					};
+				};
+			};
+			buildConfigurationList = D812A1A9200C4D2100F34E52 /* Build configuration list for PBXProject "PajamaEdit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D812A1A5200C4D2100F34E52;
+			productRefGroup = D812A1AF200C4D2100F34E52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D812A1AD200C4D2100F34E52 /* PajamaEdit */,
+				D812A1C5200C4D2100F34E52 /* PajamaEditTests */,
+				D812A1D0200C4D2100F34E52 /* PajamaEditUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D812A1AC200C4D2100F34E52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D812A1C0200C4D2100F34E52 /* LaunchScreen.storyboard in Resources */,
+				D812A1BD200C4D2100F34E52 /* Assets.xcassets in Resources */,
+				D812A1BB200C4D2100F34E52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D812A1C4200C4D2100F34E52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D812A1CF200C4D2100F34E52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D812A1AA200C4D2100F34E52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D812A1B8200C4D2100F34E52 /* Document.swift in Sources */,
+				D812A1B6200C4D2100F34E52 /* DocumentViewController.swift in Sources */,
+				D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */,
+				D812A1B2200C4D2100F34E52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D812A1C2200C4D2100F34E52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D812A1CB200C4D2100F34E52 /* PajamaEditTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D812A1CD200C4D2100F34E52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D812A1D6200C4D2100F34E52 /* PajamaEditUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D812A1C8200C4D2100F34E52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D812A1AD200C4D2100F34E52 /* PajamaEdit */;
+			targetProxy = D812A1C7200C4D2100F34E52 /* PBXContainerItemProxy */;
+		};
+		D812A1D3200C4D2100F34E52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D812A1AD200C4D2100F34E52 /* PajamaEdit */;
+			targetProxy = D812A1D2200C4D2100F34E52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D812A1B9200C4D2100F34E52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D812A1BA200C4D2100F34E52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D812A1BE200C4D2100F34E52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D812A1BF200C4D2100F34E52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D812A1D8200C4D2100F34E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D812A1D9200C4D2100F34E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D812A1DB200C4D2100F34E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WQTW95Z2J;
+				INFOPLIST_FILE = PajamaEdit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.PajamaEdit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D812A1DC200C4D2100F34E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WQTW95Z2J;
+				INFOPLIST_FILE = PajamaEdit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.PajamaEdit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D812A1DE200C4D2100F34E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WQTW95Z2J;
+				INFOPLIST_FILE = PajamaEditTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.PajamaEditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PajamaEdit.app/PajamaEdit";
+			};
+			name = Debug;
+		};
+		D812A1DF200C4D2100F34E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WQTW95Z2J;
+				INFOPLIST_FILE = PajamaEditTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.PajamaEditTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PajamaEdit.app/PajamaEdit";
+			};
+			name = Release;
+		};
+		D812A1E1200C4D2100F34E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WQTW95Z2J;
+				INFOPLIST_FILE = PajamaEditUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.PajamaEditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PajamaEdit;
+			};
+			name = Debug;
+		};
+		D812A1E2200C4D2100F34E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3WQTW95Z2J;
+				INFOPLIST_FILE = PajamaEditUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sahand.PajamaEditUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PajamaEdit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D812A1A9200C4D2100F34E52 /* Build configuration list for PBXProject "PajamaEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D812A1D8200C4D2100F34E52 /* Debug */,
+				D812A1D9200C4D2100F34E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D812A1DA200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D812A1DB200C4D2100F34E52 /* Debug */,
+				D812A1DC200C4D2100F34E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D812A1DD200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEditTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D812A1DE200C4D2100F34E52 /* Debug */,
+				D812A1DF200C4D2100F34E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D812A1E0200C4D2100F34E52 /* Build configuration list for PBXNativeTarget "PajamaEditUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D812A1E1200C4D2100F34E52 /* Debug */,
+				D812A1E2200C4D2100F34E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D812A1A6200C4D2100F34E52 /* Project object */;
+}
