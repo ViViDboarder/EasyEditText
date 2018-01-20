@@ -26,14 +26,16 @@ class TextDocumentViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(didDismiss))
+        view.backgroundColor = .white
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Documents", style: .plain, target: self, action: #selector(didDismiss))
         
         view.addSubview(textView)
         textView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide)
-            make.bottom.equalTo(view.safeAreaLayoutGuide)
-            make.left.equalTo(view.safeAreaLayoutGuide)
-            make.right.equalTo(view.safeAreaLayoutGuide)
+            make.top.equalTo(view.layoutMarginsGuide.snp.top)
+            make.bottom.equalTo(view.layoutMarginsGuide.snp.bottom)
+            make.left.equalTo(view.readableContentGuide.snp.left)
+            make.right.equalTo(view.readableContentGuide.snp.right)
         }
         textView.font = UIFont.preferredFont(forTextStyle: .body)
         textView.delegate = self

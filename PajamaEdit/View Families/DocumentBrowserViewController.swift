@@ -9,7 +9,7 @@
 import UIKit
 
 
-class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate {
+class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate, UIViewControllerTransitioningDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +48,25 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         // Make sure to handle the failed import appropriately, e.g., by presenting an error message to the user.
     }
     
+    var transitioningController: UIDocumentBrowserTransitionController? = nil
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transitioningController!
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transitioningController!
+    }
+    
     func presentDocument(at documentURL: URL) {
         let vc = TextDocumentViewController(document: TextDocument(fileURL: documentURL))
         vc.modalPresentationStyle = .formSheet
         
         let nav = UINavigationController(rootViewController: vc)
+        nav.transitioningDelegate = self
+        
+        self.transitioningController = transitionController(forDocumentURL: documentURL)
+        
         present(nav, animated: true, completion: nil)
     }
 }
