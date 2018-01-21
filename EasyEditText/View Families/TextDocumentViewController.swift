@@ -9,11 +9,12 @@
 import UIKit
 import SnapKit
 
-class TextDocumentViewController: UIViewController, UITextViewDelegate {
-    
+class TextDocumentViewController: UIViewController, UITextViewDelegate, KeyboardAppearanceDelegate {
     let document: TextDocument
     
     let textView = UITextView()
+    
+    var keyboardObserver: NSObjectProtocol?
     
     init(document: TextDocument) {
         self.document = document
@@ -39,6 +40,8 @@ class TextDocumentViewController: UIViewController, UITextViewDelegate {
         }
         textView.font = UIFont.preferredFont(forTextStyle: .body)
         textView.delegate = self
+        
+        listenForKeyboardAppearance()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,6 +70,14 @@ class TextDocumentViewController: UIViewController, UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         document.utf8String = textView.text
         document.updateChangeCount(.done)
+    }
+    
+    func keyboardWillHide(toEndHeight height: CGFloat) {
+        textView.textContainerInset = UIEdgeInsetsMake(8, 0, 8, 0)
+    }
+    
+    func keyboardWillShow(toEndHeight height: CGFloat) {
+        textView.textContainerInset = UIEdgeInsetsMake(8, 0, height + 8, 0)
     }
 }
 

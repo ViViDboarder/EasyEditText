@@ -16,6 +16,7 @@
 		D812A1CB200C4D2100F34E52 /* PajamaEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1CA200C4D2100F34E52 /* PajamaEditTests.swift */; };
 		D812A1D6200C4D2100F34E52 /* PajamaEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */; };
 		D828602B200C879500E2D7BE /* TextDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828602A200C879500E2D7BE /* TextDocumentViewController.swift */; };
+		D857D38B2015562B00E1D09D /* KeyboardAppearanceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D857D38A2015562B00E1D09D /* KeyboardAppearanceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D812A1D5200C4D2100F34E52 /* PajamaEditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PajamaEditUITests.swift; sourceTree = "<group>"; };
 		D812A1D7200C4D2100F34E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D828602A200C879500E2D7BE /* TextDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDocumentViewController.swift; sourceTree = "<group>"; };
+		D857D38A2015562B00E1D09D /* KeyboardAppearanceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAppearanceDelegate.swift; sourceTree = "<group>"; };
 		E8E7B9FC52EFA667FC171162 /* Pods_EasyEditText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyEditText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F757F1574E78186BCA198E2A /* Pods-EasyEditText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyEditText.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyEditText/Pods-EasyEditText.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 			children = (
 				D812A1B3200C4D2100F34E52 /* DocumentBrowserViewController.swift */,
 				D828602A200C879500E2D7BE /* TextDocumentViewController.swift */,
+				D857D38A2015562B00E1D09D /* KeyboardAppearanceDelegate.swift */,
 			);
 			path = "View Families";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D857D38B2015562B00E1D09D /* KeyboardAppearanceDelegate.swift in Sources */,
 				D812A1B8200C4D2100F34E52 /* TextDocument.swift in Sources */,
 				D812A1B4200C4D2100F34E52 /* DocumentBrowserViewController.swift in Sources */,
 				D828602B200C879500E2D7BE /* TextDocumentViewController.swift in Sources */,
