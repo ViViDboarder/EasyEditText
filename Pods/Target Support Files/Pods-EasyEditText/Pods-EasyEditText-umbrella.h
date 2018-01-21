@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_PajamaEditVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_PajamaEditVersionString[];
+FOUNDATION_EXPORT double Pods_EasyEditTextVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_EasyEditTextVersionString[];
 
