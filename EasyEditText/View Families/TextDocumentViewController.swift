@@ -62,6 +62,14 @@ class TextDocumentViewController: UIViewController, UITextViewDelegate, Keyboard
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if document.utf8String.isEmpty {
+            textView.becomeFirstResponder()
+        }
+    }
+    
     @objc func didDismiss() {
         self.document.close(completionHandler: nil)
         dismiss(animated: true, completion: nil)
